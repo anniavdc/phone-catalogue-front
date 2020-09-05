@@ -7,7 +7,7 @@ import {
   Switch
 } from 'react-router-dom';
 
-// components
+// files
 import Main from './pages/Main';
 import NotFound from './pages/NotFound';
 

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<div>
+  <div
+    class="main-page"
+  >
+    <header>
+      Header
+    </header>
+    <section
+      class="main-content"
+    >
+      <div>
+        PhoneListPage
+      </div>
+    </section>
+    <footer>
+      Footer
+    </footer>
+  </div>
+</div>
+`;
