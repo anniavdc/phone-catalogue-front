@@ -22,7 +22,7 @@ const phoneListStart = (state, action) => {
 
 const phoneListSuccess = (state, action) => {
     return updateObject(state, {
-        channelList: action.channelList,
+        phoneList: action.phoneList,
         error: null,
         networkError: null,
         loading: false,
