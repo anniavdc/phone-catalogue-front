@@ -10,7 +10,7 @@ import thunk from 'redux-thunk';
 import App from './App';
 import phoneListReducer from './store/reducers/phoneList';
 
-import './index.scss';
+import './styles/index.scss';
 
 /**
  * enable redux dev tools
