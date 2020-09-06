@@ -14,7 +14,7 @@ export default function ProductCard(props) {
             <div className="card-image" style={{ backgroundImage: `url(${imageUrl})` }}>
             </div>
             <div>
-                <h2 className="card-title">{title}</h2>
+                <h3 className="card-title">{title}</h3>
                 <p className="card-content">{content}</p>
             </div>
         </div>

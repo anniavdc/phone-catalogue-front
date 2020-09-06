@@ -3,3 +3,23 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+
+.main-header {
+    background: lighten($color-primary-500, 10%);
+    color: $color-neutral-200;
+    padding: 15px;
+}
+
+.main-footer {
+    background: $color-neutral-300;
+    color: $color-neutral-100;
+    padding: 15px;
+    margin-top: 30px;
+    color: $color-neutral-700;
+    text-align: right;
+}
+
+.main-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}

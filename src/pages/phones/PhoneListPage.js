@@ -1,4 +1,4 @@
-import React,  { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 // files
@@ -16,16 +16,19 @@ export default function PhoneListPage() {
     const baseURL = process.env.REACT_APP_API_BASE;
 
     return (
-        <div className="products-wrapper">
-            {phones.phoneList.map(phone =>
-                <ProductCard
-                    key={phone.id}
-                    title={phone.name}
-                    content={phone.manufacturer}
-                    info={`${phone.price}€`}
-                    imageUrl={`${baseURL}/public/${phone.imageFileName}`}
-                />
-            )}
-        </div>
+        <React.Fragment>
+            <h2 className="products-title">Phone Catalogue</h2>
+            <div className="products-wrapper">
+                {phones.phoneList.map(phone =>
+                    <ProductCard
+                        key={phone.id}
+                        title={phone.name}
+                        content={phone.manufacturer}
+                        info={`${phone.price}€`}
+                        imageUrl={`${baseURL}/public/${phone.imageFileName}`}
+                    />
+                )}
+            </div>
+        </React.Fragment>
     )
 }

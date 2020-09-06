@@ -16,7 +16,7 @@ export default function Main({ match }) {
     return (
         <div className="main-page">
             <header className="main-header">
-                Header
+                <h1 className="main-title">Product app</h1>
             </header>
             <section className="main-content">
                 <Router>
@@ -28,7 +28,7 @@ export default function Main({ match }) {
                 </Router>
             </section>
             <footer className="main-footer">
-                Footer
+                by Annia da Costa Martins
             </footer>
         </div>
     )
