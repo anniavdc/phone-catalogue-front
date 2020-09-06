@@ -15,8 +15,8 @@ import PhoneDetail from './phones/PhoneDetail';
 export default function Main({ match }) {
     return (
         <div className="main-page">
-            <header>
-                Header
+            <header className="main-header">
+                <h1 className="main-title">Product app</h1>
             </header>
             <section className="main-content">
                 <Router>
@@ -27,8 +27,8 @@ export default function Main({ match }) {
                     </Switch>
                 </Router>
             </section>
-            <footer>
-                Footer
+            <footer className="main-footer">
+                by Annia da Costa Martins
             </footer>
         </div>
     )

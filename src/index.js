@@ -8,8 +8,9 @@ import thunk from 'redux-thunk';
 
 // files
 import App from './App';
+import phoneListReducer from './store/reducers/phoneList';
 
-import './index.scss';
+import './styles/index.scss';
 
 /**
  * enable redux dev tools
@@ -17,6 +18,7 @@ import './index.scss';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const appReducer = combineReducers({
+  phones: phoneListReducer
 });
 
 const rootReducer = (state, action) => appReducer(state, action);
