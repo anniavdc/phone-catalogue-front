@@ -7,11 +7,12 @@ import ProductCard from './../../components/productCard/ProductCard';
 import { phoneList } from './../../store/actions/index';
 
 export default function PhoneListPage({ match }) {
-    const phones = useSelector(state => state.phones);
+    const phones = useSelector(state => state.phones.phoneList);
     const dispatch = useDispatch();
     let history = useHistory();
 
     useEffect(() => {
+        // get or update phone data (in case there are new items to be displayed)
         dispatch(phoneList());
     }, [dispatch]);
 
@@ -24,7 +25,7 @@ export default function PhoneListPage({ match }) {
         <React.Fragment>
             <h2 className="products-title">Phone Catalogue</h2>
             <div className="products-wrapper">
-                {phones.phoneList.map(phone =>
+                {phones.map(phone =>
                     <ProductCard
                         key={phone.id}
                         title={phone.name}
