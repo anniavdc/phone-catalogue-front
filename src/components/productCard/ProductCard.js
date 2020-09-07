@@ -5,11 +5,12 @@ export default function ProductCard(props) {
         title,
         info,
         imageUrl,
-        content
+        content,
+        onCardClick
     } = props;
 
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={onCardClick} >
             <p className="card-info">{info}</p>
             <div className="card-image" style={{ backgroundImage: `url(${imageUrl})` }}>
             </div>

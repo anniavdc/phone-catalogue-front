@@ -4,20 +4,26 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
+  useLocation,
+  Redirect
 } from 'react-router-dom';
 
 // files
 import Main from './pages/Main';
 import NotFound from './pages/NotFound';
 
+const NotFoundPage = () => {
+  const { pathname } = useLocation();
+  return pathname === '/' ? <Redirect to="/app" /> : <NotFound />;
+};
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/app" component={Main} />
-        <Route exact path="/" component={Main} />
-        <Route path="*" component={NotFound} />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
     </Router>
   );
