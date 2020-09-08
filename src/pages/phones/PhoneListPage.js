@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 
 // files
 import ProductCard from './../../components/productCard/ProductCard';
+import Loader from './../../components/loader/Loader';
 import { phoneList } from './../../store/actions/index';
 
 export default function PhoneListPage({ match }) {
@@ -22,20 +23,25 @@ export default function PhoneListPage({ match }) {
 
     const baseURL = process.env.REACT_APP_API_BASE;
     return (
-        <React.Fragment>
-            <h2 className="products-title">Phone Catalogue</h2>
-            <div className="products-wrapper">
-                {phones.map(phone =>
-                    <ProductCard
-                        key={phone.id}
-                        title={phone.name}
-                        content={phone.manufacturer}
-                        info={`${phone.price}€`}
-                        imageUrl={`${baseURL}/public/${phone.imageFileName}`}
-                        onCardClick={() => handleProductClick(phone.id)}
-                    />
-                )}
-            </div>
-        </React.Fragment>
+        !phones.length
+            ? (
+                <Loader extraClass="page" />
+            ) : (
+                <React.Fragment>
+                    <h2 className="products-title">Phone Catalogue</h2>
+                    <div className="products-wrapper">
+                        {phones.map(phone =>
+                            <ProductCard
+                                key={phone.id}
+                                title={phone.name}
+                                content={phone.manufacturer}
+                                info={`${phone.price}€`}
+                                imageUrl={`${baseURL}/public/${phone.imageFileName}`}
+                                onCardClick={() => handleProductClick(phone.id)}
+                            />
+                        )}
+                    </div>
+                </React.Fragment>
+            )
     )
 }
