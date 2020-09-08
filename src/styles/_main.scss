@@ -30,4 +30,11 @@
 .main-title {
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.loader.page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
