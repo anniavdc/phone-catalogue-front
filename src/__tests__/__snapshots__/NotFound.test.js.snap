@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound render 1`] = `
+<div>
+  <div
+    class="not-found-wrapper"
+  >
+    <div
+      class="not-found-icon-wrapper"
+    >
+      <img
+        alt="not found icon"
+        class="search-icon"
+        src="search-icon.png"
+      />
+      <p
+        class="code"
+      >
+        404
+      </p>
+    </div>
+    <div
+      class="not-found-content"
+    >
+      <p>
+        Page not found
+      </p>
+      <p>
+        Sorry. We couldn't find the page you are looking for
+      </p>
+    </div>
+    <a
+      class="link"
+      href="/app"
+    >
+      Go to main page
+    </a>
+  </div>
+</div>
+`;
