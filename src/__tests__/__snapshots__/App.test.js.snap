@@ -17,13 +17,8 @@ exports[`App render 1`] = `
     <section
       class="main-content"
     >
-      <h2
-        class="products-title"
-      >
-        Phone Catalogue
-      </h2>
       <div
-        class="products-wrapper"
+        class="loader page"
       />
     </section>
     <footer

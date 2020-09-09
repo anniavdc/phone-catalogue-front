@@ -2,7 +2,6 @@ import React from 'react';
 
 // libraries
 import {
-    BrowserRouter as Router,
     Route,
     Switch,
     Redirect,

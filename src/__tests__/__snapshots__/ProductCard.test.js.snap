@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard render 1`] = `
+<div>
+  <div
+    class="product-card"
+  >
+    <p
+      class="card-info"
+    >
+      59
+    </p>
+    <div
+      class="card-image"
+      style="background-image: url(https://image.png);"
+    />
+    <div>
+      <h3
+        class="card-title"
+      >
+        Galaxy 7
+      </h3>
+      <p
+        class="card-content"
+      >
+        Samsung
+      </p>
+    </div>
+  </div>
+</div>
+`;

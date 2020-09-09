@@ -12,11 +12,11 @@ export default function NotFound() {
                 <p className="code">404</p>
             </div>
             <div className="not-found-content">
-                <p>Página no encontrada</p>
-                <p>Lo sentimos. No hemos podido encontrar la página que estás buscando</p>
+                <p>Page not found</p>
+                <p>Sorry. We couldn't find the page you are looking for</p>
             </div>
             <Link className="link" to="/app">
-                Ir a página principal
+                Go to main page
             </Link>
         </div>
     )

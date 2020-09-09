@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneListPage render 1`] = `
+<div>
+  <h2
+    class="products-title"
+  >
+    Phone Catalogue
+  </h2>
+  <div
+    class="products-wrapper"
+  >
+    <div
+      class="product-card"
+    >
+      <p
+        class="card-info"
+      >
+        769€
+      </p>
+      <div
+        class="card-image"
+        style="background-image: url(http://localhost:5000/public/IPhone_7.png);"
+      />
+      <div>
+        <h3
+          class="card-title"
+        >
+          iPhone 7
+        </h3>
+        <p
+          class="card-content"
+        >
+          Apple
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

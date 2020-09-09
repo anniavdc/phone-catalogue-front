@@ -1,11 +1,12 @@
 import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { render } from '@testing-library/react';
 
 // files
 import App from '../App';
+import render from '../utils/tests/renderWithRouter';
 
 const initialState = {
   phones: {
@@ -29,4 +30,13 @@ describe('App', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  // it('should redirect to app if url path is equal to /', () => {
+  //   const { history } = render(
+  //     <Provider store={store}>
+  //       <App />
+  //     </Provider>,
+  //     { wrapper: MemoryRouter });
+  //   expect(history.location.pathname).toMatch(/app/);
+  // });
 })
