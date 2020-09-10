@@ -1,8 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PRODUCT CATALOGUE
+
+This is a product catalogue and it's divided in two parts:<br>
+
+* [back](https://gitlab.com/epet/bcio/sources/backoffice-api)
+* **front**
+
+You are currently in the **front** part made with ReactJS. To see the react's global information go to this [link](https://github.com/facebook/create-react-app)
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+To run the project, you first have to start the [back](https://gitlab.com/epet/bcio/sources/backoffice-api) server and then run the following command in the current project directory:
 
 ### `npm start`
 
@@ -16,6 +24,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run coverage`
+
+Launches the test runner and shows file's coverage individually.<br />
 
 ### `npm run build`
 
