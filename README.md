@@ -2,10 +2,10 @@
 
 This is a product catalogue and it's divided in two parts:<br>
 
-* [back](https://gitlab.com/epet/bcio/sources/backoffice-api)
-* **front**
+* [phone-catalogue-back](https://github.com/anniavdc/phone-catalogue-back)
+* **phone-catalogue-front**
 
-You are currently in the **front** part made with ReactJS. To see the react's global information go to this [link](https://github.com/facebook/create-react-app)
+You are currently in the **phone-catalogue-front** part made with ReactJS. To see the react's global information go to this [link](https://github.com/facebook/create-react-app)
 
 
 ## Available Scripts
